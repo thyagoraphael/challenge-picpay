@@ -87,11 +87,10 @@
 		6AB24DBE23EB546D00530BA5 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
-				6AB24DF923EB55D400530BA5 /* Resources */,
-				6AB24DEB23EB54F500530BA5 /* Scenes */,
-				6AB24DBF23EB546D00530BA5 /* AppDelegate.swift */,
-				6AB24DC123EB546D00530BA5 /* SceneDelegate.swift */,
-				6AB24DCD23EB546F00530BA5 /* Info.plist */,
+				F60B1DD42A0BFC9000A4A99C /* Core */,
+				F60B1DD52A0BFCBE00A4A99C /* Feature */,
+				F60B1DD22A0BFC5E00A4A99C /* Start */,
+				F60B1DD32A0BFC6E00A4A99C /* SupportingFiles */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -105,31 +104,30 @@
 			path = InterviewTests;
 			sourceTree = "<group>";
 		};
-		6AB24DEB23EB54F500530BA5 /* Scenes */ = {
+		6AB24DEB23EB54F500530BA5 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				6AB24DEC23EB550100530BA5 /* ListContacts */,
+				6AB24DEC23EB550100530BA5 /* ListContact */,
 			);
-			path = Scenes;
+			name = Scene;
 			sourceTree = "<group>";
 		};
-		6AB24DEC23EB550100530BA5 /* ListContacts */ = {
+		6AB24DEC23EB550100530BA5 /* ListContact */ = {
 			isa = PBXGroup;
 			children = (
-				6AB24DED23EB551000530BA5 /* Models */,
-				6AB24DF323EB555B00530BA5 /* Services */,
-				6AB24DF023EB552D00530BA5 /* ViewModels */,
-				6AB24DF623EB557200530BA5 /* Views */,
+				6AB24DED23EB551000530BA5 /* Model */,
+				6AB24DF323EB555B00530BA5 /* Service */,
+				6AB24DF623EB557200530BA5 /* Screen */,
 			);
-			path = ListContacts;
+			path = ListContact;
 			sourceTree = "<group>";
 		};
-		6AB24DED23EB551000530BA5 /* Models */ = {
+		6AB24DED23EB551000530BA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				6AB24DEE23EB552100530BA5 /* Contact.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6AB24DF023EB552D00530BA5 /* ViewModels */ = {
@@ -140,30 +138,22 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		6AB24DF323EB555B00530BA5 /* Services */ = {
+		6AB24DF323EB555B00530BA5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				6AB24DF423EB556700530BA5 /* ListContactsService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
-		6AB24DF623EB557200530BA5 /* Views */ = {
+		6AB24DF623EB557200530BA5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				6AB24DF723EB558D00530BA5 /* ContactCell.swift */,
+				6AB24DF023EB552D00530BA5 /* ViewModels */,
+				F60B1DD62A0C04A400A4A99C /* Cell */,
 				6AB24DE923EB54E800530BA5 /* ListContactsViewController.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6AB24DF923EB55D400530BA5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6AB24DC823EB546F00530BA5 /* Assets.xcassets */,
-				6AB24DCA23EB546F00530BA5 /* LaunchScreen.storyboard */,
-			);
-			path = Resources;
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		B163814B28775C780096BF33 /* Scenes */ = {
@@ -197,6 +187,49 @@
 				6ABE2F8F24CEF691009D7593 /* ListContactServiceTests.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F60B1DD22A0BFC5E00A4A99C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				6AB24DBF23EB546D00530BA5 /* AppDelegate.swift */,
+				6AB24DC123EB546D00530BA5 /* SceneDelegate.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		F60B1DD32A0BFC6E00A4A99C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6AB24DC823EB546F00530BA5 /* Assets.xcassets */,
+				6AB24DCA23EB546F00530BA5 /* LaunchScreen.storyboard */,
+				6AB24DCD23EB546F00530BA5 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F60B1DD42A0BFC9000A4A99C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F60B1DD52A0BFCBE00A4A99C /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				6AB24DEB23EB54F500530BA5 /* Scene */,
+			);
+			name = Feature;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F60B1DD62A0C04A400A4A99C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6AB24DF723EB558D00530BA5 /* ContactCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S96TK27X79;
-				INFOPLIST_FILE = Interview/Info.plist;
+				INFOPLIST_FILE = Interview/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S96TK27X79;
-				INFOPLIST_FILE = Interview/Info.plist;
+				INFOPLIST_FILE = Interview/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
