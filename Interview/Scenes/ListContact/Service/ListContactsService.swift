@@ -14,7 +14,7 @@ private let apiURL = "https://run.mocky.io/v3/d26d86ec-fb82-48a7-9c73-69e2cb7280
 */
 
 class ListContactService {
-    func fetchContacts(completion: @escaping ([Contact]?, Error?) -> Void) {
+    func fetchContacts(completion: @escaping ([ContactModel]?, Error?) -> Void) {
         guard let api = URL(string: apiURL) else {
             return
         }
@@ -27,7 +27,7 @@ class ListContactService {
             
             do {
                 let decoder = JSONDecoder()
-                let decoded = try decoder.decode([Contact].self, from: jsonData)
+                let decoded = try decoder.decode([ContactModel].self, from: jsonData)
                 
                 completion(decoded, nil)
             } catch let error {

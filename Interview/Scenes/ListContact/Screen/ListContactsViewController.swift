@@ -28,7 +28,7 @@ class ListContactsViewController: UIViewController, UITableViewDataSource, UITab
         return tableView
     }()
     
-    var contacts = [Contact]()
+    var contacts = [ContactModel]()
     var viewModel: ListContactsViewModel!
     
     init() {
@@ -67,7 +67,7 @@ class ListContactsViewController: UIViewController, UITableViewDataSource, UITab
         ])
     }
     
-    func isLegacy(contact: Contact) -> Bool {
+    func isLegacy(contact: ContactModel) -> Bool {
         return UserIdsLegacy.isLegacy(id: contact.id)
     }
     
