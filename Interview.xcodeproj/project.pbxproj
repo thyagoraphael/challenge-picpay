@@ -21,6 +21,7 @@
 		F60B1DD82A0C05A400A4A99C /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DD72A0C05A400A4A99C /* ViewCodeProtocol.swift */; };
 		F60B1DDA2A0C1CA800A4A99C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DD92A0C1CA800A4A99C /* NetworkError.swift */; };
 		F60B1DDD2A0C1F7800A4A99C /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DDC2A0C1F7800A4A99C /* ContactCellViewModel.swift */; };
+		F60B1DDF2A0C218800A4A99C /* UserIdsLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DDE2A0C218700A4A99C /* UserIdsLegacy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F60B1DD72A0C05A400A4A99C /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		F60B1DD92A0C1CA800A4A99C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		F60B1DDC2A0C1F7800A4A99C /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
+		F60B1DDE2A0C218700A4A99C /* UserIdsLegacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdsLegacy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				F60B1DD72A0C05A400A4A99C /* ViewCodeProtocol.swift */,
+				F60B1DDE2A0C218700A4A99C /* UserIdsLegacy.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				6AB24DF223EB554300530BA5 /* ListContactsViewModel.swift in Sources */,
 				F60B1DDA2A0C1CA800A4A99C /* NetworkError.swift in Sources */,
 				6AB24DF823EB558D00530BA5 /* ContactCell.swift in Sources */,
+				F60B1DDF2A0C218800A4A99C /* UserIdsLegacy.swift in Sources */,
 				6AB24DC223EB546D00530BA5 /* SceneDelegate.swift in Sources */,
 				F60B1DDD2A0C1F7800A4A99C /* ContactCellViewModel.swift in Sources */,
 			);
