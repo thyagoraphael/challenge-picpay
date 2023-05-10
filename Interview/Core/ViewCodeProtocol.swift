@@ -9,17 +9,17 @@
 import Foundation
 
 protocol ViewCodeProtocol {
-    func buildViewHierarchy()
+    func buildHierarchy()
     func setupConstraints()
-    func configureViews()
+    func applyAdditionalChanges()
 }
 
 extension ViewCodeProtocol {
     func applyViewCode() {
-        buildViewHierarchy()
+        buildHierarchy()
         setupConstraints()
-        configureViews()
+        applyAdditionalChanges()
     }
     
-    func configureViews() { }
+    func applyAdditionalChanges() { }
 }
