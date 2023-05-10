@@ -1,6 +1,7 @@
 # interview-ios Picpay
 
-## 
+## Modificações
+</br>
 
 - Add protocolo de ViewCode para melhorar a reutilização das funções de hierarquia de views, contraints e configurações extras
 
@@ -8,14 +9,12 @@
 
 - Enum com casos de erros para camada de Service
 
-</p></p>
+- Usando o enum Result na camada de service
 
-</p></p>
+- Refatorando a ViewModel para se adequar as modificações da camada de service
 
-</p></p>
+- Removendo regras de negocio da ViewController
 
-</p></p>
+- Removendo classe UserIdsLegacy da ViewController
 
-</p></p>
-
-</p></p>
+- Adicionar ViewModel para ContactCell

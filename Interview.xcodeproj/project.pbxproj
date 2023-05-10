@@ -20,6 +20,7 @@
 		B163815028775CAD0096BF33 /* ListContactViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163814F28775CAD0096BF33 /* ListContactViewModelTests.swift */; };
 		F60B1DD82A0C05A400A4A99C /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DD72A0C05A400A4A99C /* ViewCodeProtocol.swift */; };
 		F60B1DDA2A0C1CA800A4A99C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DD92A0C1CA800A4A99C /* NetworkError.swift */; };
+		F60B1DDD2A0C1F7800A4A99C /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B1DDC2A0C1F7800A4A99C /* ContactCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B163814F28775CAD0096BF33 /* ListContactViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactViewModelTests.swift; sourceTree = "<group>"; };
 		F60B1DD72A0C05A400A4A99C /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		F60B1DD92A0C1CA800A4A99C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F60B1DDC2A0C1F7800A4A99C /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,12 +136,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6AB24DF023EB552D00530BA5 /* ViewModels */ = {
+		6AB24DF023EB552D00530BA5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				6AB24DF123EB554300530BA5 /* ListContactsViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6AB24DF323EB555B00530BA5 /* Service */ = {
@@ -154,7 +156,7 @@
 		6AB24DF623EB557200530BA5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				6AB24DF023EB552D00530BA5 /* ViewModels */,
+				6AB24DF023EB552D00530BA5 /* ViewModel */,
 				F60B1DD62A0C04A400A4A99C /* Cell */,
 				6AB24DE923EB54E800530BA5 /* ListContactsViewController.swift */,
 			);
@@ -233,9 +235,18 @@
 		F60B1DD62A0C04A400A4A99C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F60B1DDB2A0C1F5D00A4A99C /* ViewModel */,
 				6AB24DF723EB558D00530BA5 /* ContactCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F60B1DDB2A0C1F5D00A4A99C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F60B1DDC2A0C1F7800A4A99C /* ContactCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +358,7 @@
 				F60B1DDA2A0C1CA800A4A99C /* NetworkError.swift in Sources */,
 				6AB24DF823EB558D00530BA5 /* ContactCell.swift in Sources */,
 				6AB24DC223EB546D00530BA5 /* SceneDelegate.swift in Sources */,
+				F60B1DDD2A0C1F7800A4A99C /* ContactCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
